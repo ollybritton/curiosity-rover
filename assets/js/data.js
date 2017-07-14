@@ -1,3 +1,1 @@
-var body = $('body'),
-    html = $('html'),
-    button = $('.button')
+var body = document.getElementsByTagName('body');

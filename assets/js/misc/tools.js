@@ -1,16 +1,29 @@
-var tools = {
-  random: {
+/*jshint esversion: 6 */
 
-    randomInt: function(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min
-    },
+function elem(tag) {
+  return document.getElementsById(tag);
+}
 
-    randomNumber: function(min, max) {
-      return Math.random()*(max-min)+min
-    },
+function show(elem, type="flex") {
+  elem.style.display = type;
+}
 
-    // randomFromArray: function(array) {
-    //   return array[tools.random.randomInt(-1, array.length)]
-    // }
-  }
+function hide(elem) {
+  elem.style.display = "none";
+}
+
+function addClass(elem, val) {
+  elem.classList.add(val);
+}
+
+function removeClass(elem, val) {
+  elem.classList.remove(val);
+}
+
+function toggleClass(elem, val) {
+  elem.classList.toggle(val);
+}
+
+function randomInt(min, max) {
+  return Math.floor(Math.random() * (max - min +1)) + min;
 }

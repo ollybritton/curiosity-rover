@@ -1,5 +1,1 @@
-$( document ).ready(function() {
-
-  // Get started!
-
-});
+/*jshint esversion: 6 */

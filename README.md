@@ -1,2 +1,2 @@
-# Kettle
-A starter kit.
+# Shruggie.
+:tada:.
