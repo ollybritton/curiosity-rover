@@ -6,7 +6,7 @@ function elem(target) {
 
 function set_image(element, name) {
   console.log("In set_image function, with values", element, name)
-  name = "url(../../assets/img/" + name + ")";
+  name = "url(assets/img/" + name + ")";
   console.log(name);
   element.css("background-image", name);
   console.log(element.css("background-image"))
