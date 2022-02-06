@@ -1,8 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500");
 @import url(bootstrap/reset.css);
+@import url(components/slider.css);
 body {
-  font-family: "Roboto", "Helvetica", sans-serif;
+  font-family: "Roboto Mono", "Roboto", "Helvetica", sans-serif;
   color: black;
   line-height: 1.735;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300; }
+
+a {
+  text-decoration: none;
+  color: #1AA3B5; }
+
+.splash {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../../assets/img/splash/mars.jpg");
+  background-size: cover; }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%; }
+  .flex-container .curiosity-main-heading {
+    font-size: 250%;
+    background: black;
+    color: white;
+    display: inline;
+    padding: 10px;
+    font-weight: 400;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0.5em; }
+  .flex-container .curiosity-sub-heading {
+    background: black;
+    color: white;
+    display: inline;
+    padding: 5px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 150%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1em; }
+
+.images {
+  background-color: #4e5166;
+  width: 100%;
+  height: 100%; }
+
+.current-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/img/front_avoidance/sol_1000_image_0.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.picture-number {
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  background: black;
+  color: white;
+  padding: 5px;
+  font-size: 150%;
+  font-weight: 300;
+  font-style: italic;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+
+.sol-number-subtext {
+  font-weight: 300;
+  color: black;
+  padding: 7px;
+  background: white;
+  font-size: 120%;
+  font-style: italic;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+
+.sol-number {
+  font-weight: 500;
+  color: black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 28px;
+  line-height: 1;
+  background: white;
+  font-size: 300%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+
+.nasa-link {
+  margin: 5px;
+  font-weight: 300; }
+  .nasa-link .sol-highlight {
+    font-weight: 500; }
+
+.nasa-text-container {
+  height: 30em;
+  overflow-y: scroll;
+  flex: 1 0 auto; }
+
+.nasa-text {
+  margin: 5px; }
+
+.share {
+  padding: 5px; }
+
+body {
+  background: black; }
+
+.data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+  min-height: 100vh;
+  width: 100%; }
+  .data .left-info {
+    flex: 1;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; }
+  .data .right-info {
+    flex: 1.65;
+    width: 100%;
+    display: flex;
+    position: relative; }
+    .data .right-info * {
+      position: absolute; }
+
+.sharing {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40vh;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
